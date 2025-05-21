@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Hamdi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/95e4c26e1d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- --------header----------- -->
+    <header class="header">
+        <a href="" class="logo"><span>Ahmed</span> Hamdi</a>
+
+        <nav class="nav-bar">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact Me</a>
+            <a class="down-btn" title="Download my resume"
+                href="https://drive.google.com/uc?export=download&id=1mAGAsxK0QkCbBFiLom5TXXj-PKvdGcUd">
+                Resume
+                <i class="fa-solid fa-download"></i>
+            </a>
+        </nav>
+
+        <div class="menu-icon" id="menu-icon" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- --------side menu for small screens----------- -->
+    <nav class="side-menu" id="side-menu">
+        <div class="close-btn" id="close-btn" onclick="closeMenu()">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <a href="#home" onclick="closeMenu()">Home</a>
+        <a href="#about" onclick="closeMenu()">About Me</a>
+        <a href="#portfolio" onclick="closeMenu()">Portfolio</a>
+        <a href="#contact" onclick="closeMenu()">Contact Me</a>
+        <a class="down-btn" title="Download my resume" onclick="closeMenu()"
+            href="https://drive.google.com/uc?export=download&id=1mAGAsxK0QkCbBFiLom5TXXj-PKvdGcUd">
+            Resume
+            <i class="fa-solid fa-download"></i>
+        </a>
+    </nav>
+
+    <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+
+
+    <!-- --------home----------- -->
+    <section id="home">
+        <div class="container">
+            <div class="home-text">
+                <h1>Hi , I'm<br><span>Ahmed Hamdi</span></h1>
+                <p>A Passionate Software Engineer & Android Developer</p>
+
+                <div class="social-icons">
+                    <a target="_blank" title="Send an email" href="mailto:hamdikhater68@gmail.com"><i
+                            class="fa-regular fa-envelope"></i></a>
+                    <a target="_blank" title="Linkedin" href="https://www.linkedin.com/in/khateer"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a target="_blank" title="GitHub" href="https://github.com/khaatteerr"><i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+            <a href="#portfolio" class="btn cta-btn">
+                Discover My Projects<i class="fa-solid fa-angle-down"></i>
+            </a>
+
+            <div class="stars"></div>
+        </div>
+    </section>
+
+
+
+    <!-- --------about----------- -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-col-1">
+                    <img src="images/ahmed_hamdi.jpg">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a dedicated and detail-oriented Native Android Developer with over 2 years of experience
+                        in Kotlin and crafting mobile applications, seeking opportunities to contribute and develop
+                        innovative applications with my problem-solving skills, passion, and commitment to deliver
+                        user-friendly software solutions.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link">Skills</p>
+                        <p class="tab-links">Experience</p>
+                        <p class="tab-links">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Kotlin, Java, C++, Python</li>
+                            <li><span>Mobile Development</span><br>Android SDK, Jetpack Compose, Firebase, Clean
+                                Architecture, MVVM, Dependency Injection</li>
+                            <li><span>Tools & IDEs</span><br>Android Studio, Git & GitHub, IntelliJ IDEA, VS Code,
+                                Postman, Figma</li>
+                            <li><span>Soft Skills</span><br>Teamwork, Communication, Work under pressure, Adaptability,
+                                Leadership, Problem-Solving</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Apr 2025 - Current</span><br>Intern Android Developer at The Chance</li>
+                            <li><span>Jan 2023 - Current</span><br>Junior Android Developer</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Sep 2019 - Jun 2023</span><br>Bachelor’s degree in computer science.
+                                <br>Faculty of Computer and Artificial Intelligence at Benha University<br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- --------portfolio----------- -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/projects/savior.png">
+                    <div class="layer">
+                        <h3>Savior</h3>
+                        <p>My graduation project which is a savior app for guiding users to find missing people using face recognition.</p>
+                        <a target="_blank" href="https://www.linkedin.com/feed/update/urn:li:activity:7078745314391732224?utm_source=share&utm_medium=member_desktop&rcm=ACoAADmKdhYB-Yyf1s0AA6uGlb8maHsFSdVZHbo"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/projects/super survey.png">
+                    <div class="layer">
+                        <h3>Super Survey</h3>
+                        <p>An application that allows users to complete certain surveys and offers to get points which are exchanged into real money.
+                        </p>
+                        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.supersurveys"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/projects/code article.png">
+                    <div class="layer">
+                        <h3>Code Articles</h3>
+                        <p>An application used to share posts of programmers at the current moment and what they are doing now.</p>
+                        <a target="_blank"
+                            href="https://www.linkedin.com/posts/khateer_code-articel-application-with-jetpack-compose-activity-7167544663053217793-lc28?utm_source=share&utm_medium=member_desktop&rcm=ACoAADmKdhYB-Yyf1s0AA6uGlb8maHsFSdVZHbo"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/projects/wools.png">
+                    <div class="layer">
+                        <h3>Wools</h3>
+                        <p>A wools is application that allows users to preview, download, search, and set wallpaper as home screen.</p>
+                        <a target="_blank"
+                            href="https://play.google.com/store/apps/details?id=com.khater.wool"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/projects/food reciep2.png">
+                    <div class="layer">
+                        <h3>Food Recipe</h3>
+                        <p>Food Recipe is an E-commerce application for easy order foods.</p>
+                        <a target="_blank" href="https://youtu.be/4YzhPW2p168?si=c88BMbSWVH4wgK-x"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                 <div class="work">
+                    <img src="images/projects/coffe shop.png">
+                    <div class="layer">
+                        <h3>Coffeeto</h3>
+                        <p>Discover your favorite brews with our Coffee Shop App! Browse the menu, order ahead</p>
+                        <a target="_blank" href="https://www.linkedin.com/posts/khateer_jetpackcompose-activity-7048643834997542912-GiIf?utm_source=share&utm_medium=member_desktop&rcm=ACoAADmKdhYB-Yyf1s0AA6uGlb8maHsFSdVZHbo"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <button class="btn see-more">See More<i class="fa-solid fa-plus"></i></button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- --------contact----------- -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h1 class="sub-title">Contact Me</h1>
+
+            <div class="contact-form">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="7" placeholder="Your Message" required></textarea>
+
+                    <button type="submit" class="btn submit">
+                        <span class="submit-text">Submit</span>
+                        <div class="spinner"><i class="fa-solid fa-spinner"></i></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- --------copy right----------- -->
+    <footer>
+        <p class="copyright">Copyright &copy; <a href="https://www.linkedin.com/in/khateer" target="_blank">Ahmed Hamdi</a> 2024. All Rights Reserved.</p>
+    </footer>
+
+
+
+    <!-- --------scripts----------- -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
